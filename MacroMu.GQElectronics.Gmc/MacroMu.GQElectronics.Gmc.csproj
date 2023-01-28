@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GenerateDocumentationFile>True</GenerateDocumentationFile>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Company>MacroMu, LLC</Company>
+        <Copyright>Copyright 2023 MacroMu LLC, GPLv3</Copyright>
+        <!--<PackageIcon>MacroMuLynx_128.png</PackageIcon>-->
+        <PackageTags>macromu GQ GQElectronics Geiger Counter GMC GMC500 GMC600 GMC-500 GMC-600 GMC-500+ GMC-600+</PackageTags>
+        <PackageProjectUrl>https://github.com/Bohden/MacroMu.GQElectronics.Gmc</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Bohden/MacroMu.GQElectronics.Gmc</RepositoryUrl>
+        <RepositoryType></RepositoryType>
+        <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+        <Description>
+            This package contains classes to enable communication with, and control of, the GQ Electronics LLC geiger counters.
+            Officially, this supports models GMC-500, GMC-500+, GMC-600, GMC-600+, or any device which complies with the
+            RFC1801 definitions. All commands (except for "AT" wifi module commands) are covered, and managed so that the
+            library is thread-safe.
+        </Description>
+        <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+        <PackageReleaseNotes>Initial release; Captures all basic commands and inline documentation.</PackageReleaseNotes>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="System.IO.Ports" Version="6.0.0" />
+    </ItemGroup>
+
+</Project>
